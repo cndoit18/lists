@@ -1,3 +1,5 @@
+#![allow(unused)]
+
 pub struct List {
     head: Link,
 }

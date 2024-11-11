@@ -1,3 +1,5 @@
+#![allow(unused)]
+
 use std::rc::Rc;
 
 pub struct List<T> {
@@ -51,7 +53,7 @@ impl<T> Drop for List<T> {
     }
 }
 
-struct Iter<'a, T> {
+pub struct Iter<'a, T> {
     next: Option<&'a Node<T>>,
 }
 
