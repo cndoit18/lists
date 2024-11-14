@@ -730,7 +730,8 @@ impl<T> CursorMut<'_, T> {
 
 #[cfg(test)]
 mod test {
-    use super::*;
+    use super::LinkedList;
+    use std::fmt::Debug;
 
     fn generate_test() -> LinkedList<i32> {
         list_from(&[0, 1, 2, 3, 4, 5, 6])
